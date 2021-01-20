@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "beregular";
+}
+
+a {
+  color: initial;
+}
+
+@font-face {
+  font-family: "beregular";
+  src: url("BeVietnam-Regular.woff") format("woff");
+}
+/*# sourceMappingURL=reset.css.map */

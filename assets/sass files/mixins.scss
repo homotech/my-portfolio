@@ -1,0 +1,118 @@
+@mixin flex($choicealign, $choicejustify, $choicedirection, $choicewrap) {
+  display: flex;
+  flex-direction: $choicedirection;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: $choicewrap;
+}
+@mixin btn($choicecolor, $choiceborder) {
+  background-color: $choicecolor;
+  outline: none;
+  border: $choiceborder;
+}
+@mixin navbar($choicemd, $choicedirection, $choicedisplay) {
+  width: 100%;
+  // display: flex;
+  @include flex(center, center, $choicemd, wrap);
+  .firstdivision {
+    .brand {
+      a {
+        font-size: $header;
+        font-weight: 600;
+        color: $purple;
+      }
+    }
+    .barssm {
+      display: $choicedisplay;
+    }
+  }
+  .seconddivision {
+    nav {
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      ul {
+        display: flex;
+        width: 100%;
+        flex-direction: $choicedirection;
+        // flex-wrap: wrap;
+        li {
+          width: 100%;
+          a {
+            transition: 0.3s all ease-in-out;
+            border-radius: 10px;
+            padding: 10px;
+            display: block;
+            width: 95%;
+          }
+          .active {
+            font-weight: 600;
+            background-color: $purple;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin smallerdevs {
+  padding: 10px;
+  @include navbar(row, column, flex);
+  min-height: 60px;
+  .firstdivision {
+    flex-basis: 100%;
+    padding: 10px;
+    @include flex(center, center, row, wrap);
+    .brand {
+      flex-basis: 80%;
+    }
+    .barssm {
+      flex-basis: 20%;
+      i {
+        font-size: $header;
+        cursor: pointer;
+        padding: 10px;
+        &:hover {
+          color: $purple;
+        }
+      }
+      .fa-times {
+        display: none;
+      }
+    }
+  }
+  .seconddivision {
+    flex-basis: 100%;
+    nav {
+      display: none;
+    }
+    a {
+      font-size: $body - 0.2rem;
+      color: $black;
+      text-align: center;
+      &:hover {
+        background-color: $purpleopac;
+        font-weight: 600;
+      }
+    }
+  }
+}
+@mixin laptopnav {
+  @include navbar(row, row, none);
+  height: 60px;
+  .firstdivision {
+    flex-basis: 15%;
+  }
+  .seconddivision {
+    flex-basis: 75%;
+    a {
+      font-size: $body - 0.2rem;
+      color: $black;
+      text-align: center;
+      margin: 0 5px;
+      &:hover {
+        background-color: $purpleopac;
+        font-weight: 600;
+      }
+    }
+  }
+}
