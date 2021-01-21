@@ -77,18 +77,21 @@
           }
         }
         .kmwell {
-          @include flex(center, center, row, wrap);
+          @include flex(flex-start, space-around, row, wrap);
           width: 100%;
           a {
             filter: drop-shadow(-3px 3px 10px rgba(0, 0, 0, 0.7));
-            flex-basis: 30%;
+            flex-basis: 35%;
             padding: 10px;
-            margin: 0 40px;
+            margin: 0 5px;
             transition: 0.3s all ease-in-out;
             text-align: center;
             font-size: $body + 0.1rem;
             border-radius: 10px;
             font-weight: 700;
+            &:nth-child(2) {
+              margin-left: 30px;
+            }
           }
         }
       }
