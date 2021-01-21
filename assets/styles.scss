@@ -22,7 +22,7 @@
       }
     }
     .kmwell {
-      padding-top: 40px;
+      padding-top: 20px;
       a {
         background-color: $purple;
         color: $white;
@@ -81,9 +81,9 @@
           width: 100%;
           a {
             filter: drop-shadow(-3px 3px 10px rgba(0, 0, 0, 0.7));
-            flex-basis: 40%;
+            flex-basis: 30%;
             padding: 10px;
-            margin: 0 5px;
+            margin: 0 40px;
             transition: 0.3s all ease-in-out;
             text-align: center;
             font-size: $body + 0.1rem;
