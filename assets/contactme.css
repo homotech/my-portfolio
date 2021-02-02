@@ -453,14 +453,15 @@ a {
   border-radius: 10px;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
-  background-color: #683ab746;
-  -webkit-box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.4), 3px -3px 10px inset rgba(0, 0, 0, 0.4);
-          box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.4), 3px -3px 10px inset rgba(0, 0, 0, 0.4);
+  border: 2px solid #673ab7;
+  background-color: #f5f5f5;
+  -webkit-box-shadow: -2px 2px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: -2px 2px 7px rgba(0, 0, 0, 0.3);
 }
 
 .main .cta .links .linkscontainer div:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   background-color: #673ab7;
 }
 
@@ -472,14 +473,16 @@ a {
 .main .cta .links .linkscontainer div i {
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
+  color: #673ab7;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .main .cta .links .linkscontainer div a {
+  color: #673ab7;
   display: block;
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
   text-align: center;
   -ms-flex-preferred-size: 90%;
       flex-basis: 90%;

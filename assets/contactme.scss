@@ -45,11 +45,11 @@
           padding: 10px;
           border-radius: 10px;
           transition: 0.3s all ease-in-out;
-          background-color: $purpleopac;
-          box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.4),
-            3px -3px 10px inset rgba(0, 0, 0, 0.4);
+          border: 2px solid $purple;
+          background-color: $white;
+          box-shadow: -2px 2px 7px rgba(0, 0, 0, 0.3);
           &:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             background-color: $purple;
             i,
             a {
@@ -58,11 +58,13 @@
           }
           i {
             flex-basis: 10%;
-            transition: 0.3s all ease-in-out;
+            color: $purple;
+            transition: 0.2s all ease-in-out;
           }
           a {
+            color: $purple;
             display: block;
-            transition: 0.3s all ease-in-out;
+            transition: 0.2s all ease-in-out;
             text-align: center;
             flex-basis: 90%;
             font-weight: 700;
